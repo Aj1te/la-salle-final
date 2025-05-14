@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https:// cdnjs.cloudflare.com https://stackpath.bootstrapcdn.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.  jsdelivr.net https://stackpath.bootstrapcdn.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    connect-src 'self';
+    object-src 'none';
+    frame-ancestors 'none';">
+
+  <title>Carousel sans flèches</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <header>
+          <nav class="navbar navbar-expand-lg navbar-light px-0">
+            <div class="container-fluid position-relative d-flex justify-content-between align-items-center">
+              <a class="" href="#">
+                <img class="logo position-absolute" src="assets/img/icons/logo.png" alt="">
+              </a>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">L'équipe<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Les activités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nos Offres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Planning</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Le Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li>
+                  <img class="tel-icon pr-1" src="assets/img/icons/icons8-téléphone-portable-48.png" alt="" height="24">
+                  <span class="text-dark">05 59 47 84 18</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="reseaux position-absolute align-items-center">
+              <img class="logo-reseaux" src="assets/img/icons/Facebook.png" alt="" height="24">
+              <img class="logo-reseaux" src="assets/img/icons/Instagram.png" alt="" height="24">
+              <img class="logo-reseaux" src="assets/img/icons/TripAdvisor.png" alt="" height="24">
+            </div>
+            </div>
+          </nav>
+
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel data-interval="false"">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active position-relative">
+              <img class="w-100 position-relative text-center" src="assets/img/slider/slide_1.jpg" alt="First slide">
+
+              <div class="carousel-caption position-absolute">
+                <p class="spacing-letters" style="font-weight: 400; font-size: 24px;">2 INSCRIPTIONS SIMULTANEES = UN 3ème ABONNEMENT DE 6 MOIS OFFERT !
+                </p>
+
+              <button type="button" class="btn-custom">PLUS D'INFOS</button>
+              </div>
+            </div>
+
+
+            <div class="carousel-item position relative">
+              <img class="d-block w-100" src="assets/img/slider/slide_2.jpg" alt="Second slide">
+
+              <div class="carousel-caption position-absolute">
+                <p class="slogan-top">
+                  UNE INSTALATION NEUVE ET
+                  <p class="slogan-main couleur-texte">"PENSÉE POUR VOUS" !!</p> 
+                </p>
+                <p class="spacing-letters" style="padding-bottom: 220px; font-weight: 400; font-size: 24px;">UN LOCAL DE 300m² POUR VOUS ACCUEILLIR DANS UNE ATMOSPHÈRE BIENVEILLANTE.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="carousel-item position relative">
+              <img class="d-block w-100" src="assets/img/slider/slide_3.jpg" alt="Third slide">
+
+              <div class="carousel-caption position-absolute">
+                <p class="slogan-top">
+                  SALLE DE SPORT EQUIPÉE DE 
+                  <p class="slogan-main couleur-texte">"MATÉRIEL DERNIER CRI"</p>
+                </p>
+                <p class="spacing-letters" style="padding-bottom: 220px; font-weight: 400; font-size: 24px;">POUR VOUS OFFRIR DES ENTRAINEMENTS EFFICACES ET MOTIVANTS.
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="valeurs justify-content-center">
+
+      <h1 class="mt-5 d-flex justify-content-center">LE STUDIO SPORT ET & COACHING,</h1>
+      <h1 class="d-flex justify-content-center">SALLE DE SPORT, FITNESS ET CROSSFIT A BIARRITZ</h1>
+
+      <hr>
+    
+      <div class="container">
+        <p>Aujourd'hui beaucoup de salle de sport vendent des abonnements où vous avez accès à tous les services du club (cours collectifs, plateau musculation...) mais combien vous connaissent au point de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les atteindre ?
+        </p>
+        <p class="text-lowercase">Beaucoup de gens estiment être livrés à eux même dans ce genre de salle. Nous avons choisi la direction diamétralement opposée ! Notre seule priorité ? La qualité du Service. Notre nouveau concept de salle de sport SUR MESURE trouve une solution adaptée à votre budget et disponibilités. Nous oeuvront pour créer une ambiance familiale tout en vous aidant à vous dépasser dans l'effort et ce, pour maximiser vos chances d'obtenir des résultats. Les sportifs de Haut-Niveau ont des entraîneurs et des préparateurs physiques pour atteindre leurs objectifs. Alors pourquoi pas vous ?</p>
+        <p class="text-lowercase text-center">Vous voulez plus de Motivation, plus de Résultats, plus vite...<strong>Alors bienvenue au Studio Sport & Coaching !</strong></p>
+      </div>
+    </section>
+
+    <section class="offres"></section>
+      <h1 class="mt-5 d-flex justify-content-center">LES ACTIVITES PROPOSEES AU STUDIO SPORT BIARRITZ</h1>
+
+      <hr>
+
+
+
+    <section class="actualites"></section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
