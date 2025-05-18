@@ -3,38 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* =============================
+   Body
+============================= */
 body {
   font-family: 'Bebas Neue', sans-serif;
 }
-
-
-/* Textes Carousel*/
-.spacing-letters{
-  letter-spacing: 2px;
-}
-.couleur-texte{
-  color: #CFAD6C;
-}
-.slogan-top {
-  font-size: 3.438rem;
-  letter-spacing: 2px;
-  margin-right: 150px;
-  margin-bottom: -30px;
-}
-.slogan-main {
-  font-size: 5.625rem;
-  letter-spacing: 3px;
-  margin-top: 0;
-  margin-left: 150px;
-}
-
-
-/* NAV BAR */
+/* =============================
+   NavBar
+============================= */
 .logo {
     height: 60px;
-    top: -7px;
-    left: 30px;
 }
 .menu-align {
   padding-right: 90px;
@@ -80,26 +59,68 @@ body {
 .reseaux {
   right: 170px;
 }
+/* =============================
+   Menu Burger
+============================= */
 .navbar-toggler{
   background-image: none;
-  border: 2px solid #CFAD6C;
+  border: 2px solid #CFAD6C !important;
   padding: 5px 10px;
   border-radius: 5px;
 }
-
-
-
-/* Séparation des paragraphes */
-hr {
-  border: none;
-  border-top: 4px solid #CFAD6C;
-  width: 80px;
-  margin: 1rem auto;
-  padding-bottom: 10px;
+.menu-burger-largeur a{
+  width: 100px;
 }
-
-
-/* 3 Petits points de slide */
+.menu-burger-largeur-activites a{
+  width: 230px;
+}
+/* =============================
+   Replacer la couleur des 3 traits du bouton burger
+============================= */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23CFAD6C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.w-232{
+  width: 232px;
+}
+/* =============================
+   Textes Carousel
+============================= */
+.spacing-letters{
+  letter-spacing: 2px;
+}
+.couleur-texte{
+  color: #CFAD6C;
+}
+.slogan-top {
+  font-size: 4vw;
+  letter-spacing: 2px;
+  margin-bottom: -20px;
+}
+.slogan-main {
+  font-size: 8vw;
+  margin-left: 50px;
+}
+.carousel-caption{
+  top: 22%;
+}
+.fixed-caption {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 15px;
+}
+/* =============================
+   Carousel
+============================= */
+.carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  position: relative;
+}
+/* =============================
+   3 Petits points de slide
+============================= */
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -111,23 +132,6 @@ hr {
 .carousel-indicators .active {
   opacity: 1;
 }
-
-
-/* Carousel */
-.carousel-item {
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  position: relative;
-}
-.carousel-caption.fixed-caption {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 15px;
-}
-
-
 .btn-custom {
   background-color: transparent;
   color: white;
@@ -139,10 +143,19 @@ hr {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-
 .btn-custom:hover {
   background-color: white;
   color: black;
+}
+/* =============================
+   Séparation des paragraphes
+============================= */
+hr {
+  border: none;
+  border-top: 4px solid #CFAD6C;
+  width: 80px;
+  margin: 1rem auto;
+  padding-bottom: 10px;
 }
 
 .square {
@@ -189,11 +202,10 @@ hr {
   margin-top: 0.75rem;
   font-size: 0.875rem;
   position: relative;
-  /* display: inline-block; */
 }
-
-
-/* Animation "En savoir Plus" */
+/* =============================
+   Animation "En savoir Plus"
+============================= */
 .overlay a::after{
   content: "";
   display: block;
@@ -208,27 +220,29 @@ hr {
 .overlay a:hover::after{
   transform: scaleX(1)
 }
-
-
-/* Images actualités */
+/* =============================
+   Images actualités
+============================= */
 .actu-image {
   width: 100%;
   height: 250px;
   background-size: cover;
   background-position: center;
+  margin-top: 20px;
 }
 
-
-/* Boutons Lire la Suite */
+/* =============================
+   Boutons Lire la Suite
+============================= */
 .animation a {
   color: black;
   text-decoration: none;
   margin-top: 10px;
   position: relative;
 }
-
-
-/* Animation "Lire la suite" */
+/* =============================
+   Animation "Lire la suite"
+============================= */
 .animation a::after{
   content: "";
   display: block;
@@ -247,19 +261,19 @@ hr {
 .texte-blanc{
   color: white;
 }
-
-
-/* Section partenaires */
+/* =============================
+   Section partenaires
+============================= */
 .bandeau-noir{
-  background: black;
+  background: #282828;
   height: 28rem;
 }
 .avantages a{
   color:#CFAD6C
 }
-
-
-/* SECTION ACTIVITÉS */
+/* =============================
+   Section Activités
+============================= */
 .section-activites {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -281,19 +295,18 @@ hr {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-
-
-/* Style des logos Partenaires */
+/* =============================
+   Style des logos Partenaires
+============================= */
 .logo-partenaire {
-  height: 80px; /* ou adapte selon tes besoins */
+  height: 80px;
   object-fit: contain;
 }
-
-
-/* Footer */
-
+/* =============================
+   Footer
+============================= */
 .footer{
-  background-color: #1e1f21;
+  background-color: #282828;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -310,9 +323,11 @@ hr {
   font-family: 'Roboto',
   sans-serif;
 }
-
+.footer-bottom {
+  background: black;
+}
 /* =============================
-   MAP SECTION
+   Map section
 ============================= */
 .map-section {
   height: 500px;
@@ -326,38 +341,81 @@ hr {
   width: 100%;
   filter: grayscale(100%) contrast(1.2) brightness(0.8);
 }
-
-@media (max-width: 1223px){
+/* =============================
+   Media Query
+============================= */
+@media (max-width: 1373px){
   .reseaux a{
     display: none;
   }
-  .nav-item-equipe{
-    margin-left: ;
+}
+@media (max-width: 1155px){
+  .tel{
+    display: none;
   }
 }
-
-@media (max-width: 991px) {
+@media (max-width: 991px){
   .nav-item-equipe{
     margin-left: 0 !important;
   }
   .navbar{
     margin-left: 0;
   }
-  .inscriptions{
-    display: none;
+  footer h4{
+    font-size: 20px;
   }
-  .tel{
-    display: none;
+  footer p, footer li{
+    font-size: 13px;
   }
 }
-
-@media (max-width: 605px){
+@media (max-width: 900px){
+  .inscriptions {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 801px){
+  .slogan-main{
+    font-size: 6vw;
+  }
+}
+@media (max-width: 767px){
+  footer p, footer li, footer h4{
+    text-align: center;
+  }
+  .logo-media-query{
+    justify-content: center;
+  }
+  .center-media-query{
+    text-align: center;
+    padding-bottom: 13px;
+  }
+}
+@media (max-width: 713px){
+  .inscriptions {
+    font-size: 13px !important;
+    }
+  h1{
+    font-size: 30px;
+  }
+}
+@media (max-width: 670px){
   .btn-custom{
   background-color: transparent;
   color: white;
   border: 3px solid white;
   border-radius: 0;
-  padding: 5px 10px;
+  padding: 5px 5px;
   transition: all 0.3s ease;
+  font-weight: 100;
+  font-size: 12px;
+  }
+  .inscriptions{
+    display: none;
+  }
+  .logo {
+    height: 45px;
+  }
+  .slogan-main{
+    padding-top: 10px;
   }
 }
