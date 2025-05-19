@@ -22,11 +22,6 @@ body {
   color: white;              
   background-color: #CFAD6C;
 }
-.hide-navbar {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
 .logo-reseaux{
   height: 20px;
 }
@@ -47,9 +42,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
   z-index: 9999;
-  box-shadow: none;
+  transition: transform 0.3s ease-in-out;
+  height: 70px;
+}
+.hide-navbar {
+  transform: translateY(-100%);
 }
 .tel-icon{
   height: 24px;
@@ -70,6 +68,7 @@ body {
 }
 .menu-burger-largeur a{
   width: 100px;
+  text-align: center;
 }
 .menu-burger-largeur-activites a{
   width: 230px;
@@ -319,12 +318,41 @@ hr {
 .footer a{
   text-decoration: underline;
 }
+.footer a:hover{
+  color: #CFAD6C !important;
+}
+.liens-nus {
+  text-decoration: none !important;
+  color: white;
+}
+ .liens-nus a:hover{
+  color: #CFAD6C;
+}
 .footer ul{
   font-family: 'Roboto',
   sans-serif;
 }
 .footer-bottom {
   background: black;
+}
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: transparent;
+  color: #CFAD6C !important;
+  padding: 10px 19px;
+  border-radius: 50%;
+  border-color: #CFAD6C;
+  font-size: 20px;
+  z-index: 10000;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+#backToTop.show {
+  display: block;
 }
 /* =============================
    Map section
@@ -367,6 +395,9 @@ hr {
   footer p, footer li{
     font-size: 13px;
   }
+  .menu-burger-largeur a{
+    text-align: start;
+}
 }
 @media (max-width: 900px){
   .inscriptions {
@@ -396,6 +427,9 @@ hr {
     }
   h1{
     font-size: 30px;
+  }
+  #backToTop{
+    margin-top: 20px;
   }
 }
 @media (max-width: 670px){

@@ -1,23 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const backToTopBtn = document.getElementById("backToTop");
-  const navbar = document.querySelector(".custom-navbar");
-  const banner = document.querySelector(".banner");
-  if (!backToTopBtn || !navbar || !banner) {
-    console.warn("Élément(s) manquant(s)", { backToTopBtn, navbar, banner });
-    return;
-  }
-  // On récupère la hauteur réelle de la bannière après le chargement complet
-  const bannerHeight = banner.getBoundingClientRect().height;
-  window.addEventListener("scroll", function () {
-    const scrolled = window.scrollY > bannerHeight;
-    // Affichage du bouton retour haut
-    backToTopBtn.classList.toggle("show", scrolled);
-    // Cacher navbar si on a scrollé
-    navbar.classList.toggle("hide-navbar", scrolled);
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    // const backToTopBtn = document.getElementById("backToTop");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+      const currentScroll = window.scrollY;
+
+      // // Afficher bouton retour haut
+      // if (currentScroll > 200) {
+      //   backToTopBtn.classList.add("show");
+      // } else {
+      //   backToTopBtn.classList.remove("show");
+      // }
+
+      // Disparition / réapparition navbar
+      if (currentScroll > lastScrollTop && currentScroll > 100) {
+        navbar.classList.add("hide-navbar");
+      } else {
+        navbar.classList.remove("hide-navbar");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    // backToTopBtn.addEventListener("click", function (e) {
+    //   e.preventDefault();
+    //   window.scrollTo({ top: 0, behavior: "smooth" });
+    // });
   });
-  // Scroll smooth retour en haut
-  backToTopBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+// =====================
+// CAROUSEL
+// =====================
+  $('#carouselExampleIndicators').carousel({
+    interval: 5000,
+    ride: 'carousel'
   });
-});

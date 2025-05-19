@@ -1,107 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-    img-src 'self' data: https: maps.google.com;
-    connect-src 'self';
-    frame-src 'self' https://maps.google.com https://www.google.com;
-    object-src 'none';
-    frame-ancestors 'none';
-  ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Présentation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-    <title>Contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SECURITY -->
+   
+    <title>Contact</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- BEBAS NEUE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FICHIER CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
-    <!-- BANNIÈRE -->
-<header class="banner text-white d-flex align-items-center" style="background: url('./assets/img/gallery/visuel/header-contact.jpg') center/cover no-repeat;">
-  <div class="overlay"></div>
-  <div class="container position-relative z-2 text-center"></div>
-</header>
+
+<header>
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-  <div class="container-fluid px-4 position-relative">
-    <a class="navbar-brand d-flex align-items-center gap-2 me-4" href="404.html">
-      <img src="./assets/img/icons/logo.png" alt="Logo" class="logo-img img" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navMenu">
-      <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item"><a class="nav-link" href="404.html">L'équipe</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="activitesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Les activités</a>
-          <ul class="dropdown-menu" aria-labelledby="activitesDropdown">
-            <li><a class="dropdown-item" href="cycling.html">Le Cycling</a></li>
-            <li><a class="dropdown-item" href="training.html">Le Training Fonctionnel</a></li>
-            <li><a class="dropdown-item" href="crossfit.html">Le Crossfit</a></li>
-            <li><a class="dropdown-item" href="coaching.html">Personal Training - Coach Personnel</a></li>
+<nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img class="logo" src="assets/img/icons/logo.png" alt=""></a>
+        <button class="navbar-toggler menu-burger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu-burger-largeur collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item-equipe">
+              <a class="nav-link nav-item" href="404.html">L'équipe<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Les Activités</a>
+              <div class="dropdown-menu menu-burger-largeur-activites w-232" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="404.html">Le Cycling</a>
+              <a class="dropdown-item" href="404.html">Le Training Fonctionnel</a>
+              <a class="dropdown-item" href="404.html">Le Crossfit</a>
+              <a class="dropdown-item" href="404.html">Personal Training - Coach Personnel</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404.html">Nos Offres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404.html">Planning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404.html">Le Blog</a>
+            </li>
+            <li class="nav-item  pr-5">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="d-flex align-items-center">
+              <img class="tel-icon pr-1 tel" src="assets/img/icons/icons8-téléphone-portable-48.png" alt="" height="24">
+              <span class="text-dark tel">05 59 47 84 18</span>
           </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="404.html">Nos offres</a></li>
-        <li class="nav-item"><a class="nav-link" href="404.html">Planning</a></li>
-        <li class="nav-item"><a class="nav-link" href="404.html">Le blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="404.html">Contact</a></li>
-      </ul>
-      <!-- Langue Mobile -->
-      <div class="dropdown lang-switch-dropdown text-center my-3 d-block d-lg-none position-relative">
-        <button class="dropdown-toggle btn btn-sm btn-gold px-4" type="button" id="langDropdownMobile" data-bs-toggle="dropdown" aria-expanded="false">FR</button>
-        <ul class="dropdown-menu fade mt-2" aria-labelledby="langDropdownMobile">
-          <li><a class="dropdown-item" href="?lang=fr">Français</a></li>
-          <li><a class="dropdown-item" href="?lang=en">English</a></li>
-          <li><a class="dropdown-item" href="?lang=de">Deutsch</a></li>
-        </ul>
-      </div>
-
-      <!-- Réseaux desktop -->
-      <div class="d-none d-lg-flex align-items-center gap-4 contact-social navbar-contact-logos">
-        <div class="text-white">
-          <i class="fas fa-phone-alt me-2 text-pink"></i>05 59 47 84 18
         </div>
-        <div class="d-flex align-items-center gap-3">
-          <a href="404.html" class="text-white"><i class="fab fa-facebook-f"></i></a>
-          <a href="404.html" class="text-white"><i class="fab fa-instagram"></i></a>
-          <a href="404.html" class="text-white" title="TripAdvisor">
-            <img src="./assets/img/icons/tripadvisor.png" alt="TripAdvisor" style="height: 20px;" />
+        <div class="reseaux position-absolute align-items-center">
+          <a href="404.html">
+                <img class="logo-reseaux" src="assets/img/icons/Facebook.png" alt="" height="24">
+          </a>
+          <a href="404.html">
+                <img class="logo-reseaux" src="assets/img/icons/Instagram.png" alt="" height="24">
+          </a>
+          <a href="404.html">
+                <img class="logo-reseaux" src="assets/img/icons/TripAdvisor.png" alt="" height="24">
           </a>
         </div>
-      </div>
-
-      <!-- Réseaux mobile -->
-      <div class="d-lg-none text-center mt-4">
-        <div class="text-white mb-2">
-          <i class="fas fa-phone-alt me-2 text-pink"></i>05 59 47 84 18
-        </div>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="404.html" class="text-white"><i class="fab fa-facebook-f"></i></a>
-          <a href="404.html" class="text-white"><i class="fab fa-instagram"></i></a>
-          <a href="404.html" class="text-white" title="TripAdvisor">
-            <img src="./assets/img/icons/tripadvisor.png" alt="TripAdvisor" style="height: 20px;" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Langue Desktop -->
-    <div class="lang-switch-dropdown d-none d-lg-block">
-      <a href="?lang=en" class="lang-icon">EN</a>
-    </div>
-  </div>
 </nav>
+
+<img src="assets/img/gallery/visuel/header-contact.jpg" alt="">
+</header>
+
 <!-- SECTION FORMULAIRE DE CONTACT -->
 <section class="contact-section py-5">
   <div class="container">
@@ -122,7 +98,6 @@
         contact (at) studiobiarritz.com<br>
         ou via ce formulaire</p>
       </div>
-
       <!-- Formulaire -->
       <div class="col-md-8">
         <h4 class="mb-3 text-uppercase fw-bold">Formulaire de contact</h4>
@@ -177,50 +152,65 @@
     </div>
   </div>
 </section>
+
 <!-- FOOTER -->
-<footer class="footer-main text-white">
-  <div class="container py-4">
-    <div class="row text-md-start align-items-start">
-      <div class="col-md-4 mb-4 mb-md-0 mt-md-3">
-        <div class="d-flex align-items-center mb-2">
-          <img src="./assets/img/icons/logo_footer.png" alt="Logo Studio" style="width: 35px;height:auto;">
-          <span class="ms-3" style="font-size:1.6rem; font-weight:bold;">À PROPOS</span>
+<footer>
+  <div class="container-fluid text-white footer">
+    <div class="row py-5 d-flex justify-content-end">
+      <div class="col-12 col-md-3">
+        <div class="d-flex logo-media-query">
+          <img class="mb-1" src="./assets/img/icons/logo_footer.png" alt="Logo Studio">
+          <h4 class="d-flex align-items-end ml-4">À Propos</h4>
         </div>
-        <p class="mb-1" style="font-size:1rem;">2018 © Studio Sport & Coaching Biarritz</p>
-        <a href="404.html" class="text-white text-decoration-underline fw-bold" style="font-size:1.1rem;">Mentions légales</a>
+        <div class="center-media-query">
+          <p>2018 © Studio Sport &amp; Coaching Biarritz</p>
+          <p>Salle de sport, de fitness et de crossfit à Biarritz Pays Basque</p>
+          <p>RCS : 000 000 000</p>
+          <a class="text-white" href="404.html">Mentions légales</a>
+        </div> 
       </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h6 class="mb-2">STUDIO SPORT CORPORATE</h6>
-        <ul class="list-unstyled mb-0 footer-corporate-list">
-          <li>— <a href="404.html" class="footer-corporate-link">Crossfit Biarritz</a></li>
-          <li>— <a href="404.html" class="footer-corporate-link">Studio Center</a></li>
-          <li>— <a href="404.html" class="footer-corporate-link">Devenir partenaire</a></li>
-        </ul>
+
+      <div class="col-12 col-md-3 d-flex justify-content-center">
+        <div>
+          <h4 class="pt-4">Studio Sport Corporate</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a class="liens-nus" href="404.html">— Crossfit Biarritz</a></li>
+            <li><a class="liens-nus" href="404.html">— Studio Center : créez votre studio</a></li>
+            <li><a class="liens-nus" href="404.html">— Devenir partenaire</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h6 class="mb-2">COACHING & TRAINING AU PAYS BASQUE</h6>
-        <p class="mb-0">Coach à Biarritz, Fitness à Anglet, Crossfit à Bayonne.</p>
+
+      <div class="col-12 col-md-6">
+          <h4 class="pt-4">Fitness, Crossfit et Training au Pays Basque</h4>
+          <p><a class="liens-nus" href="404.html">Coach personnel à Biarritz</a>, <a class="liens-nus" href="404.html">Coach personnel de sport à Anglet</a>, <a class="liens-nus" href="404.html">Salle de sport à Bayonne</a>,
+          <a class="liens-nus" href="404.html">Fitness à Biarritz</a>, <a class="liens-nus" href="404.html">Fitness à Anglet</a>, <a class="liens-nus" href="404.html">Fitness sur le BAB</a>,</p>
+          <p>Autre mot clé + ville, Autre mot clé + ville, Autre mot clé + ville</p>
       </div>
-    </div>
+      <!-- <button id="backToTop" title="Retour en haut">↑</button> -->
   </div>
+
   <div class="footer-bottom text-white py-2">
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height:48px;">
       <div class="d-flex align-items-center">
         <div class="footer-signature text-end">
-          <span class="small d-block fw-bold text-uppercase">Un site créé par</span>
-          <span class="small d-block fw-bold text-uppercase">L'AGENCE 364 COM</span>
+          <span class="small d-block fw-bold" style="text-transform:uppercase;">Un site créé par</span>
+          <span class="small d-block fw-bold" style="text-transform:uppercase;">L'AGENCE 364 COM</span>
         </div>
-        <a href="https://www.364.fr" target="_blank" class="footer-logo-link ms-3">
+        <a href="https://www.364.fr/" target="_blank" class="footer-logo-link ms-3">
           <img src="./assets/img/icons/364.png" class="footer-logo-img" alt="Logo 364">
         </a>
       </div>
     </div>
   </div>
 </footer>
+
 <!-- BOUTON RETOUR EN HAUT -->
 <a href="#" id="backToTop" title="Retour en haut"><i class="fas fa-chevron-up"></i></a>
 <!-- scripts -->
-<script src="./js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
