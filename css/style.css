@@ -103,7 +103,7 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
 }
-.menu-burger-largeur a{
+.menu-burger-largeur a:not(#phone-link){
   width: 100px;
 }
 .menu-burger-largeur-activites a{
@@ -301,7 +301,7 @@ hr {
 ============================= */
 .bandeau-noir{
   background: #282828;
-  height: 28rem;
+  
 }
 .avantages a{
   color:#CFAD6C
@@ -415,11 +415,8 @@ hr {
     display: none;
   }
 }
-@media (max-width: 1000px){
-  .bandeau-noir{
-  height: 31rem;
-}
-}
+
+
 @media (max-width: 991px){
   .nav-item-equipe{
     margin-left: 0 !important;
@@ -468,9 +465,7 @@ hr {
     text-align: center;
     padding-bottom: 13px;
   }
-  .bandeau-noir{
-    height: 33rem;
-}
+
 }
 @media (max-width: 713px){
   .inscriptions {
@@ -504,13 +499,8 @@ hr {
     padding-top: 10px;
   }
 }
-@media (max-width: 600px){
-  .bandeau-noir{
-  height: 36rem;
-}
-}
-@media (max-width: 460px){
-  .bandeau-noir{
-    height: 47rem
-  }
+
+.partenaires img{
+  width: 19%;
+  margin: auto!important;
 }
