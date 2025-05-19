@@ -12,6 +12,9 @@ body {
 /* =============================
    NavBar
 ============================= */
+.dropdown-menu{
+  background: black;
+}
 .logo {
     height: 60px;
 }
@@ -60,6 +63,40 @@ body {
 /* =============================
    Menu Burger
 ============================= */
+.lang-switch-dropdown .lang-icon {
+  background-color: #CFAD6C;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 8px 50% 8px 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+.lang-switch-dropdown .lang-icon:hover {
+  background-color: #b9975d;
+  color: #fff;
+}
+.lang-switch-dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 6px;
+  transition: opacity 0.5s ease;
+}
+.lang-switch-dropdown .btn-gold {
+  min-width: auto;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+/* =============================
+   Menu Burger
+============================= */
 .navbar-toggler{
   background-image: none;
   border: 2px solid #CFAD6C !important;
@@ -68,7 +105,6 @@ body {
 }
 .menu-burger-largeur a{
   width: 100px;
-  text-align: center;
 }
 .menu-burger-largeur-activites a{
   width: 230px;
@@ -295,19 +331,10 @@ hr {
   z-index: 1;
 }
 /* =============================
-   Style des logos Partenaires
-============================= */
-.logo-partenaire {
-  height: 80px;
-  object-fit: contain;
-}
-/* =============================
    Footer
 ============================= */
 .footer{
   background-color: #282828;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 .footer p,
 .footer a{
@@ -336,23 +363,29 @@ hr {
   background: black;
 }
 #backToTop {
-  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: transparent;
-  color: #CFAD6C !important;
-  padding: 10px 19px;
+  background-color: #CFAD6C;
+  color: white;
+  padding: 12px 14px;
   border-radius: 50%;
-  border-color: #CFAD6C;
-  font-size: 20px;
-  z-index: 10000;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(10px);
 }
-
 #backToTop.show {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#backToTop:hover {
+  background-color: #CFAD6C;
 }
 /* =============================
    Map section
@@ -382,12 +415,27 @@ hr {
     display: none;
   }
 }
+@media (max-width: 1000px){
+  .bandeau-noir{
+  height: 31rem;
+}
+}
 @media (max-width: 991px){
   .nav-item-equipe{
     margin-left: 0 !important;
   }
   .navbar{
     margin-left: 0;
+  }
+  .lang-switch-dropdown .dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 8px;
+    min-width: 140px;
+    text-align: center;
+    background-color: black;
   }
   footer h4{
     font-size: 20px;
@@ -397,7 +445,7 @@ hr {
   }
   .menu-burger-largeur a{
     text-align: start;
-}
+  }
 }
 @media (max-width: 900px){
   .inscriptions {
@@ -420,6 +468,9 @@ hr {
     text-align: center;
     padding-bottom: 13px;
   }
+  .bandeau-noir{
+    height: 33rem;
+}
 }
 @media (max-width: 713px){
   .inscriptions {
@@ -451,5 +502,15 @@ hr {
   }
   .slogan-main{
     padding-top: 10px;
+  }
+}
+@media (max-width: 600px){
+  .bandeau-noir{
+  height: 36rem;
+}
+}
+@media (max-width: 460px){
+  .bandeau-noir{
+    height: 47rem
   }
 }
