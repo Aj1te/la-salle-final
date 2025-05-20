@@ -153,6 +153,9 @@ body {
   transition: transform 0.6s ease, opacity 0.6s ease;
   position: relative;
 }
+.inscriptions{
+  font-size: 24px;
+}
 /* =============================
    3 Petits points de slide
 ============================= */
@@ -297,11 +300,14 @@ hr {
   color: white;
 }
 /* =============================
-   Section partenaires
+Section partenaires
 ============================= */
+.partenaires img{
+  width: 19%;
+  margin: auto!important;
+}
 .bandeau-noir{
   background: #282828;
-  
 }
 .avantages a{
   color:#CFAD6C
@@ -361,6 +367,7 @@ hr {
 }
 .footer-bottom {
   background: black;
+  height: 60px;
 }
 #backToTop {
   position: fixed;
@@ -415,8 +422,6 @@ hr {
     display: none;
   }
 }
-
-
 @media (max-width: 991px){
   .nav-item-equipe{
     margin-left: 0 !important;
@@ -498,9 +503,4 @@ hr {
   .slogan-main{
     padding-top: 10px;
   }
-}
-
-.partenaires img{
-  width: 19%;
-  margin: auto!important;
 }
