@@ -57,6 +57,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.telephone{
+  text-decoration: none !important;
+}
 .reseaux {
   right: 170px;
 }
@@ -103,7 +106,7 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
 }
-.menu-burger-largeur a:not(#phone-link){
+.menu-burger-largeur a:not(#phone-link, #en-link){
   width: 100px;
 }
 .menu-burger-largeur-activites a{
@@ -159,17 +162,22 @@ body {
 /* =============================
    3 Petits points de slide
 ============================= */
-.carousel-indicators li {
+.carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.5;
   transition: opacity 0.3s;
+  border: none;
+  margin: 0 4px;
 }
-.carousel-indicators .active {
+.carousel-indicators .active,
+.carousel-indicators [aria-current="true"] {
   opacity: 1;
+  background-color: #CFAD6C;
 }
+
 .btn-custom {
   background-color: transparent;
   color: white;
