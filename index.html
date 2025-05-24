@@ -18,16 +18,18 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="logo" src="assets/img/icons/logo.png" alt="Logo"></a>
-        <button class="navbar-toggler menu-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <li class="d-flex justify-content-start">
+          <a class="navbar-brand" href="#"><img class="logo-navbar" src="assets/img/icons/logo.png" alt="Logo"></a>
+        </li>
+        <button class="navbar-toggler menu-burger justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse menu-burger-largeur" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item nav-item-equipe">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item d-flex align-items-center nav-item-equipe">
               <a class="nav-link" href="404.html">L'équipe</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item d-flex align-items-center dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Les Activités</a>
               <ul class="dropdown-menu menu-burger-largeur-activites w-232" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item text-white" href="404.html">Le Cycling</a></li>
@@ -36,22 +38,27 @@
                 <li><a class="dropdown-item text-white" href="404.html">Personal Training - Coach Personnel</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="404.html">Nos Offres</a></li>
-            <li class="nav-item"><a class="nav-link" href="404.html">Planning</a></li>
-            <li class="nav-item"><a class="nav-link" href="404.html">Le Blog</a></li>
-            <li class="nav-item pr-5"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="d-flex align-items-center">
-              <a id="phone-link" class="d-flex align-items-center telephone" href="tel:0559478418">
-                <img class="tel-icon pr-1 tel" src="assets/img/icons/icons8-téléphone-portable-48.png" alt="Téléphone" height="24">
-                <span class="text-decoration-none">05 59 47 84 18</span>
-              </a>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link" href="404.html">Nos Offres</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link" href="404.html">Planning</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link" href="404.html">Le Blog</a></li>
+            <li class="nav-item d-flex align-items-center"><a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="reseaux position-absolute align-items-center">
-            <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/Facebook.png" alt="Facebook" height="24"></a>
-            <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/Instagram.png" alt="Instagram" height="24"></a>
-            <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/TripAdvisor.png" alt="TripAdvisor" height="24"></a>
+
+          <div class="d-flex flex-direction-row">
+            <div class="nav-item-tel d-flex align-items-center">
+              <a id="phone-link" class="d-flex align-items-center telephone" href="tel:0559478418">
+                <img class="tel-icon pr-1 tel" src="assets/img/icons/icons8-téléphone-portable-48.png" alt="Téléphone" height="24">
+                <span class="tel text-decoration-none">05 59 47 84 18</span>
+              </a>
+            </div>
+            <div class="reseaux position-absolute align-items-center">
+              <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/Facebook.png" alt="Facebook" height="24"></a>
+              <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/Instagram.png" alt="Instagram" height="24"></a>
+              <a href="404.html"><img class="logo-reseaux" src="assets/img/icons/TripAdvisor.png" alt="TripAdvisor" height="24"></a>
+            </div>
           </div>
+          
           <div class="lang-switch-dropdown d-none d-lg-block">
           <a href="404.html" id="en-link" class="lang-icon">EN</a>
         </div>
@@ -102,7 +109,7 @@
     <h1 class="mt-5 text-center">LE STUDIO SPORT ET & COACHING,
       <span class="d-block text-center">SALLE DE SPORT, FITNESS ET CROSSFIT A BIARRITZ</span>
     </h1>
-    <hr>
+    <hr class="opacity-100">
     <div class="container">
       <p>Aujourd'hui beaucoup de salle de sport vendent des abonnements où vous avez accès à tous les services du club (cours collectifs, plateau musculation...) mais combien vous connaissent au point de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les atteindre ?
       </p>
@@ -114,7 +121,7 @@
   <!-- SECTION ACTIVITES -->
   <section class="offres">
     <h2 class="mt-5 text-center">LES ACTIVITÉS PROPOSÉES AU STUDIO SPORT BIARRITZ</h2>
-    <hr>
+    <hr class="opacity-100">
     <div class="container-fluid px-0">
       <div class="activites row row-cols-1 row-cols-sm-2 row-cols-md-4 g-0">
         <div class="col">
@@ -164,7 +171,7 @@
   <!-- SECTION ACTUALITES -->
   <section class="actualites">
     <h2 class="mt-5 text-center">NOS DERNIÈRES ACTUALITÉS</h2>
-    <hr>
+    <hr class="opacity-100">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-12 col-lg-4 col-md-6 animation">
@@ -196,16 +203,16 @@
   <section class="container-fluid px-0">
     <div class="bandeau-noir pb-5">
       <h2 class="texte-blanc text-center pt-5">Studio sport & coaching, nos partenaires</h2>
-      <hr>
+      <hr class="opacity-100">
       <div class="avantages text-center">
         <p class="texte-blanc">En tant que membre du Studio Sport & Coaching vous bénéficierez dans ces établissements d'avantages exclusifs.<a href="404.html"> Cliquez ici</a> pour en savoir plus.</p>
       </div>
       <div class="container-fluid m-auto row row-cols-auto justify-content-center pb-2">
-        <img src="assets/img/gallery/partenaires/decathlon.png" alt="Logo 1" class="img-fluid">
-        <img src="assets/img/gallery/partenaires/massage.png" alt="Logo 2" class="img-fluid">
-        <img src="assets/img/gallery/partenaires/mini.png" alt="Logo 3" class="img-fluid">
-        <img src="assets/img/gallery/partenaires/ocean.png" alt="Logo 4" class="img-fluid">
-        <img src="assets/img/gallery/partenaires/tellechea.png" alt="Logo 5" class="img-fluid">
+        <img src="assets/img/gallery/partenaires/decathlon.png" alt="Logo 1" class="img-fluid images-partenaires">
+        <img OBJECT FIT NONE src="assets/img/gallery/partenaires/massage.png" alt="Logo 2" class="img-fluid images-partenaires">
+        <img OBJECT FIT NONE src="assets/img/gallery/partenaires/mini.png" alt="Logo 3" class="img-fluid images-partenaires">
+        <img OBJECT FIT NONE src="assets/img/gallery/partenaires/ocean.png" alt="Logo 4" class="img-fluid images-partenaires">
+        <img OBJECT FIT NONE src="assets/img/gallery/partenaires/tellechea.png" alt="Logo 5" class="img-fluid images-partenaires">
       </div>
     </div>
   </section>

@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 /* =============================
-   Body
+Body
 ============================= */
 body {
   font-family: 'Bebas Neue', sans-serif;
+}
+.w-232{
+  width: 232px;
 }
 /* =============================
    NavBar
@@ -15,8 +18,9 @@ body {
 .dropdown-menu{
   background: black;
 }
-.logo {
+.logo-navbar {
     height: 60px;
+    margin-right: 70px;
 }
 .menu-align {
   padding-right: 90px;
@@ -27,9 +31,6 @@ body {
 }
 .logo-reseaux{
   height: 20px;
-}
-.navbar-nav .nav-item {
-  margin: 0 1rem;
 }
 .navbar .nav-link,
 .navbar span,
@@ -52,16 +53,22 @@ body {
 .hide-navbar {
   transform: translateY(-100%);
 }
+.nav-item-tel{
+  padding-left: 70px;
+}
 .tel-icon{
   height: 24px;
-  align-items: center;
-  justify-content: center;
 }
 .telephone{
   text-decoration: none !important;
 }
 .reseaux {
   right: 170px;
+}
+.img-header-contact{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 /* =============================
    Menu Burger
@@ -117,9 +124,6 @@ body {
 ============================= */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23CFAD6C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-}
-.w-232{
-  width: 232px;
 }
 /* =============================
    Textes Carousel
@@ -198,10 +202,13 @@ body {
 ============================= */
 hr {
   border: none;
-  border-top: 4px solid #CFAD6C;
+  border-top: 4px solid #CFAD6C !important;
   width: 80px;
   margin: 1rem auto;
   padding-bottom: 10px;
+}
+.trait{
+  top: 15px;
 }
 
 .square {
@@ -314,6 +321,9 @@ Section partenaires
   width: 19%;
   margin: auto!important;
 }
+.images-partenaires{
+  object-fit: none;
+}
 .bandeau-noir{
   background: #282828;
 }
@@ -402,6 +412,19 @@ Section partenaires
 #backToTop:hover {
   background-color: #CFAD6C;
 }
+
+                  /*  ================== PAGE CONTACT ===================== */
+
+
+/* =============================
+   Formulaire
+============================= */
+.btn-contact{
+  background-color: #CFAD6C;
+  color: white;
+  border-radius: 0 !important;
+}
+
 /* =============================
    Map section
 ============================= */
@@ -420,12 +443,12 @@ Section partenaires
 /* =============================
    Media Query
 ============================= */
-@media (max-width: 1373px){
+@media (max-width: 1273px){
   .reseaux a{
     display: none;
   }
 }
-@media (max-width: 1155px){
+@media (max-width: 1090px){
   .tel{
     display: none;
   }
@@ -478,7 +501,19 @@ Section partenaires
     text-align: center;
     padding-bottom: 13px;
   }
-
+  .coordonnees{
+    text-align: center;
+  }
+  .coordonnees p{
+    margin-left: 0 !important;
+  }
+  #trait-coordonnees {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .custom-justify-mobile {
+    justify-content: center !important;
+  }
 }
 @media (max-width: 713px){
   .inscriptions {
