@@ -29,6 +29,10 @@ body {
   color: white;              
   background-color: #CFAD6C;
 }
+.dropdown-item:hover{
+  color: #CFAD6C !important;
+  background-color: transparent !important;
+}
 .logo-reseaux{
   height: 20px;
 }
