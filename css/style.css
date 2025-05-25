@@ -214,7 +214,9 @@ hr {
 .trait{
   top: 15px;
 }
-
+/* =============================
+   Section Activités
+============================= */
 .square {
   position: relative;
   width: 100%;
@@ -227,7 +229,6 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
 .overlay {
   position: absolute;
   inset: 0; /* équivaut à top:0; right:0; bottom:0; left:0 */
@@ -287,7 +288,6 @@ hr {
   background-position: center;
   margin-top: 20px;
 }
-
 /* =============================
    Boutons Lire la Suite
 ============================= */
@@ -334,10 +334,39 @@ Section partenaires
 .avantages a{
   color:#CFAD6C
 }
+
+/* =============================
+   Section Activités PIERRE
+============================= */
+
+.section-activites {
+  background-color: #080808;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.section-activites .container {
+  max-width: 100%;
+  padding: 0;
+}
+.section-activites .row.g-3 {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+.section-activites img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-activites img:hover {
+  transform: scale(1.05) translateZ(0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* =============================
    Section Activités
 ============================= */
-.section-activites {
+/* .section-activites {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
   background: black;
@@ -357,7 +386,7 @@ Section partenaires
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 1;
-}
+} */
 /* =============================
    Footer
 ============================= */
@@ -417,7 +446,7 @@ Section partenaires
   background-color: #CFAD6C;
 }
 
-                  /*  ================== PAGE CONTACT ===================== */
+/*  ================== PAGE CONTACT ===================== */
 
 
 /* =============================
@@ -428,7 +457,6 @@ Section partenaires
   color: white;
   border-radius: 0 !important;
 }
-
 /* =============================
    Map section
 ============================= */

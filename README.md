@@ -29,7 +29,11 @@ Le tout conçu en respectant une logique responsive pour une navigation fluide s
 
 ## 📸 Aperçu
 
-*À venir : captures d’écran du site ou GIF de démonstration.*
+- **Page d'accueil**
+<P align="center"><img src="Cahier des charges/Studio/images/ScreenShot-index-html.png" alt="Rendu Final Page Accueil" /></P>
+
+**Page Contact**
+<P align="center"><img src="Cahier des charges/Studio/images/ScreenShot-contact-html.png" alt="Rendu Final Page Contact" /></P>
 
 ```bash
 📍 Le Studio

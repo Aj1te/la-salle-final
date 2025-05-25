@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- FICHIER CSS -->
     <link rel="stylesheet" href="/css/style.css">
-</head>
+    
+  </head>
   <body>
 
   <header>
@@ -73,6 +74,7 @@
         </div>
       </div>
     </nav>
+
   <!-- Image header -->
     <div><img class="d-block img-header-contact" src="assets/img/gallery/visuel/header-contact.jpg" alt=""></div>
   </header>
@@ -104,19 +106,23 @@
               <h4 class="fw-bold">Formulaire de contact</h4>
             </div>
             <hr class="trait opacity-100 ms-0" id="trait-coordonnees">
-            <form class="mt-5">
+            <form class="mt-5" id="contactForm" novalidate>
               <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control bg-body-secondary" placeholder="VOTRE NOM" required>
+                  <input type="text" class="form-control bg-body-secondary" id="nom" placeholder="VOTRE NOM" required>
+                  <small id="error-nom" class="text-danger d-none">Nom invalide (lettres et tirets uniquement)</small>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control bg-body-secondary" placeholder="VOTRE PRÉNOM" required>
+                  <input type="text" class="form-control bg-body-secondary" id="prenom" placeholder="VOTRE PRÉNOM" required>
+                  <small id="error-prenom" class="text-danger d-none">Prénom invalide (lettres et tirets uniquement)</small>
                 </div>
                 <div class="col-md-6">
-                  <input type="tel" class="form-control bg-body-secondary" placeholder="VOTRE TÉLÉPHONE">
+                  <input type="tel" class="form-control bg-body-secondary" id="tel" placeholder="VOTRE TÉLÉPHONE">
+                  <small id="error-tel" class="text-danger d-none">Téléphone invalide (10 chiffres)</small>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control bg-body-secondary" placeholder="VOTRE EMAIL" required>
+                  <input type="email" class="form-control bg-body-secondary" id="email" placeholder="VOTRE EMAIL" required>
+                  <small id="error-email" class="text-danger d-none">Email invalide</small>
                 </div>
               </div>
               <input type="text" class="form-control mb-3 bg-body-secondary" placeholder="SUJET">
@@ -210,6 +216,9 @@
 
 <!-- Bootstrap 5 JS bundle (plus besoin de jQuery ni Popper séparé) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<!-- Sripts JS -->
     <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>
