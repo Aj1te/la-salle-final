@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Sécurité : stoppe si un élément est manquant
   if (!backToTopBtn || !navbar || !banner) {
-    console.warn("Élément(s) manquant(s)", { backToTopBtn, navbar, banner });
+    console.log("Élément(s) manquant(s)", { backToTopBtn, navbar, banner });
     return;
   }
 
