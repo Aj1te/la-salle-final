@@ -35,6 +35,13 @@ Le tout conçu en respectant une logique responsive pour une navigation fluide s
 **Page Contact**
 <P align="center"><img src="Cahier des charges/Studio/images/ScreenShot-contact-html.png" alt="Rendu Final Page Contact" /></P>
 
+**Page Présentation**
+<P align="center"><img src="Cahier des charges/Studio/images/Screenshot Presentation.jpg" alt="Rendu Final Page Présentation" /></P>
+
+**Page 404**
+<P align="center"><img src="Cahier des charges/Studio/images/Screenshot 404.jpg" alt="Rendu Final Page Présentation" /></P>
+
+
 ```bash
 📍 Le Studio
 📍 Biarritz, France
