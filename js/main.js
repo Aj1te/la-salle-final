@@ -31,7 +31,13 @@
 // =====================
 // CAROUSEL
 // =====================
-  select('#carouselExampleIndicators').carousel({
-    interval: 5000,
-    ride: 'carousel'
-  });
+  // select('#carouselExampleIndicators').carousel({
+  //   interval: 5000,
+  //   ride: 'carousel'
+  // });
+
+  var myCarousel = document.querySelector('#carouselExampleIndicators');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 5000,
+  ride: 'carousel'
+});

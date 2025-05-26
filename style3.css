@@ -264,7 +264,7 @@ h2, h3, h4 {
 /* =============================
    BACK TO TOP BUTTON
 ============================= */
-#backToTop {
+/* #backToTop {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -288,7 +288,7 @@ h2, h3, h4 {
 }
 #backToTop:hover {
   background-color: #b9975d;
-}
+} */
 
 /* =============================
    ANIMATIONS
