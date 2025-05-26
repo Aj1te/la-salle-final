@@ -1,0 +1,32 @@
+.burger {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  background: #333;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu.show {
+  display: flex;
+}
+

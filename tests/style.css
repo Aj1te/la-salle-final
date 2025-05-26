@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #48821c;
+  color: white;
+}
+
+header {
+  background: #3ab827;
+  padding: 1em;
+}
+
+.burger {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 1em;
+  background: #333;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu.show {
+  display: flex;
+}
+#navlink.active {
+  background: #CFAD6C;
+  color: #000;
+  padding: 1em;
+}
+

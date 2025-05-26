@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="dom.js"></script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    #darkModeToggle {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    #darkModeToggle:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <button id="toggleDarkMode">Activer dark mode</button>
+  <button id="darkModeToggle" aria-label="Toggle dark mode">❤️</button>
+
+  <script>
+    const headings = ["h1", "h2", "h3", "h4", "h5", "h6"];
+    headings.forEach(tag => {
+      const element = document.createElement(tag);
+      element.textContent = `Ceci est un ${tag}`;
+      document.body.appendChild(element);
+    });
+    const toggleTextButton = document.getElementById("toggleDarkMode");
+
+    toggleTextButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleTextButton.textContent = document.body.classList.contains("dark-mode")
+        ? "Désactiver dark mode"
+        : "Activer dark mode";
+      toggleHeartIcon(); 
+    });
+
+    const toggleHeartButton = document.getElementById("darkModeToggle");
+
+    toggleHeartButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleTextButton.textContent = document.body.classList.contains("dark-mode")
+        ? "Désactiver dark mode"
+        : "Activer dark mode";
+      toggleHeartIcon();
+    });
+    function toggleHeartIcon() {
+      const isDark = document.body.classList.contains("dark-mode");
+      toggleHeartButton.textContent = isDark ? "🖤" : "❤️";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.menu {position: relative;
+font-size: 500px;}
+
+.presentation {position: absolute; 
+margin-left: 530px;
+margin-top: -80px;
+font-size: 18px;}
+
+.Offre {position: absolute;
+margin-left: 690px;
+margin-top: -80px;
+font-size: 18px;
+}
+.Actualité {position: absolute;
+margin-left: 870px;
+margin-top: -80px;
+font-size: 18px;}
+
+.Contacts {position: relative;
+margin-left: 1040px;
+margin-top: -80px;
+font-size: 18px;}
+
+.NOTRE {position: absolute;
+  margin-left: 900px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration: underline;
+color: #13b4e9
+}
+.Actu {position: relative;
+margin-left: 800px;
+margin-top: 80px;}
+
+.Equipetxt {position: relative;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+align-items: center;
+font-size: 18px;
+margin-bottom: 150px;}
+
+.pourquoi {position:relative;
+margin-left: 780px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration: underline;
+color:#e91a13}
+
+.confiance { position: relative;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.overline {text-decoration: overline;
+color: #13b4e9;}
+
+.direction {position: relative;
+margin-left: 940px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30x;
+
+}

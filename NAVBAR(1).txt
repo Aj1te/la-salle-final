@@ -1,0 +1,111 @@
+/* =============================
+   NavBar
+============================= */
+.dropdown-menu{
+  background: black;
+}
+.logo-navbar {
+    height: 60px;
+    margin-right: 70px;
+}
+.menu-align {
+  padding-right: 90px;
+}
+.navbar li a:hover {
+  color: white;              
+  background-color: #CFAD6C;
+}
+.dropdown-item:hover{
+  color: #CFAD6C !important;
+  background-color: transparent !important;
+}
+.logo-reseaux{
+  height: 20px;
+}
+.navbar .nav-link,
+.navbar span,
+.navbar li {
+  color: white !important;
+}
+.navbar .nav-item.active,
+.navbar .dropdown-item.active {
+  background-color: #CFAD6C;
+  color: white !important;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+  height: 70px;
+}
+.hide-navbar {
+  transform: translateY(-100%);
+}
+.nav-item-tel{
+  padding-left: 70px;
+}
+.tel-icon{
+  height: 24px;
+}
+.telephone{
+  text-decoration: none !important;
+}
+.reseaux {
+  right: 170px;
+}
+.img-header-contact{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+/* =============================
+   Menu Burger
+============================= */
+.lang-switch-dropdown .lang-icon {
+  background-color: #CFAD6C;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 8px 50% 8px 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+.lang-switch-dropdown .lang-icon:hover {
+  background-color: #b9975d;
+  color: #fff;
+}
+.lang-switch-dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 6px;
+  transition: opacity 0.5s ease;
+}
+.lang-switch-dropdown .btn-gold {
+  min-width: auto;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+/* =============================
+   Menu Burger
+============================= */
+.navbar-toggler{
+  background-image: none;
+  border: 2px solid #CFAD6C !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.menu-burger-largeur a:not(#phone-link, #en-link){
+  width: 100px;
+}
+.menu-burger-largeur-activites a{
+  width: 230px;
+}

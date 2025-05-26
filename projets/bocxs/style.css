@@ -1,0 +1,29 @@
+.box-cyan 
+{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: cyan;
+    height: 600px;
+    width: 600px;
+}
+.box-red
+{   
+   position: absolute;
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%)    
+}
+.box-violet 
+{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: purple;
+    height: 180px;
+    width: 180px;
+
+}
