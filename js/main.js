@@ -31,7 +31,7 @@
 // =====================
 // CAROUSEL
 // =====================
-  $('#carouselExampleIndicators').carousel({
+  select('#carouselExampleIndicators').carousel({
     interval: 5000,
     ride: 'carousel'
   });
