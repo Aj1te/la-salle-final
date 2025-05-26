@@ -13,69 +13,6 @@ body {
 }
 
 /* =============================
-   NAVBAR STYLES
-============================= */
-.custom-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: transparent;
-  z-index: 9999;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Espacement horizontal entre les items du menu (desktop only) */
-.navbar-nav .nav-item {
-  margin-left: 22px;
-  margin-right: 22px;
-}
-.navbar-nav .nav-item:first-child {
-  margin-left: 0;
-}
-.navbar-nav .nav-item:last-child {
-  margin-right: 0;
-}
-/* Quand le menu passe en burger (XL = <1200px), on retire l'espacement */
-@media (max-width: 1199.98px) {
-  .navbar-nav .nav-item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.custom-navbar .nav-link,
-.custom-navbar .navbar-brand,
-.custom-navbar span,
-.custom-navbar i {
-  color: white !important;
-}
-.custom-navbar .nav-link.active,
-.custom-navbar .dropdown-item.active {
-  color: white !important;
-}
-.custom-navbar .container {
-  padding-left: 0.75rem;
-  padding-right: 1rem;
-}
-.logo-img {
-  height: 50px;
-  width: auto;
-  display: block;
-}
-.navbar-brand {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-.navbar-contact-logos {
-  padding-right: 70px;
-}
-.hide-navbar {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* =============================
    LANG SWITCHER & DROPDOWN
 ============================= */
 .lang-switch-dropdown .lang-icon {
@@ -260,36 +197,6 @@ h2, h3, h4 {
   transform: scale(1.05) translateZ(0);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-/* =============================
-   BACK TO TOP BUTTON
-============================= */
-/* #backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #CFAD6C;
-  color: white;
-  padding: 12px 14px;
-  border-radius: 50%;
-  font-size: 18px;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 9999;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  transform: translateY(10px);
-}
-#backToTop.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-#backToTop:hover {
-  background-color: #b9975d;
-} */
-
 /* =============================
    ANIMATIONS
 ============================= */

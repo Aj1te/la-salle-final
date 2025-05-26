@@ -18,9 +18,9 @@ body {
 .dropdown-menu{
   background: black;
 }
-.logo-navbar {
-    height: 60px;
-    margin-right: 70px;
+.navbarnot {
+  color: inherit !important;
+  background: none !important;
 }
 .menu-align {
   padding-right: 90px;
