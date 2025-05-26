@@ -126,8 +126,10 @@
                   <small id="error-email" class="text-danger d-none">Email invalide</small>
                 </div>
               </div>
-              <input type="text" class="form-control mb-3 bg-body-secondary" placeholder="SUJET">
-              <textarea class="form-control mb-3 bg-body-secondary" rows="5" placeholder="VOTRE MESSAGE" required></textarea>
+              <input type="text" class="form-control mb-3 bg-body-secondary" id="sujet" placeholder="SUJET">
+              <small id="error-sujet" class="text-danger d-none">Caractères interdits : &lt; &gt; $ %</small>
+              <textarea class="form-control mb-3 bg-body-secondary" id="message" rows="5" placeholder="VOTRE MESSAGE" required></textarea>
+              <small id="error-message" class="text-danger d-none">Caractères interdits : &lt; &gt; $ %</small>
               <button type="submit" class="btn btn-contact px-5 py-2 fw-bold">Envoyer</button>
             </form>
           </div>
