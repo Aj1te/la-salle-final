@@ -36,8 +36,8 @@
   //   ride: 'carousel'
   // });
 
-  var myCarousel = document.querySelector('#carouselExampleIndicators');
-  var carousel = new bootstrap.Carousel(myCarousel, {
+  const myCarousel = document.querySelector('#carouselTraining');
+  const carousel = new Bootstrap.Carousel(myCarousel, {
   interval: 5000,
   ride: 'carousel'
 });
