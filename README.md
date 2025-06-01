@@ -35,6 +35,12 @@ Le tout conçu en respectant une logique responsive pour une navigation fluide s
 **Page Contact**
 <P align="center"><img src="Cahier des charges/Studio/images/ScreenShot-contact-html.png" alt="Rendu Final Page Contact" /></P>
 
+**Page Présentation**
+![screencapture-aj1te-github-io-la-salle-final-presentation-html-2025-06-01-10_29_48](https://github.com/user-attachments/assets/46d3ceb6-d90f-4a86-8fd5-cb3a3ecd5ea8)
+
+**Page 404**
+![screencapture-aj1te-github-io-la-salle-final-404-html-2025-06-01-10_29_20](https://github.com/user-attachments/assets/37cc4022-f905-425e-b7a9-d580695f574c)
+
 ```bash
 📍 Le Studio
 📍 Biarritz, France
