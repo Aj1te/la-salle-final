@@ -31,13 +31,7 @@
 // =====================
 // CAROUSEL
 // =====================
-  // select('#carouselExampleIndicators').carousel({
-  //   interval: 5000,
-  //   ride: 'carousel'
-  // });
-
-  const myCarousel = document.querySelector('#carouselTraining');
-  const carousel = new Bootstrap.Carousel(myCarousel, {
+  const carousel = new bootstrap.Carousel(myCarousel, {
   interval: 5000,
   ride: 'carousel'
 });
